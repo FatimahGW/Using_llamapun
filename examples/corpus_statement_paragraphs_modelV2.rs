@@ -23,7 +23,7 @@ pub fn main() -> Result<(), Error> {
  // Read input arguments
   let mut input_args = env::args();
   let _ = input_args.next(); // skip process name
-  let corpus_path = match input_args.next() { //corpus_path : the html files names
+  let corpus_path = match input_args.next() { //corpus_path : the html files dir
     Some(path) => path,
     None => "tests/resources/".to_string(), //edit it to be the directory in pegasus.colonialone
   };
